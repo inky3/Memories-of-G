@@ -2,5 +2,5 @@ import { defineConfig } from 'astro/config'
 
 export default defineConfig({
   site: 'https://1nky3.github.io',
-  base: '/Memories-of-G',
+  base: '/Memories-of-G/',
 });
