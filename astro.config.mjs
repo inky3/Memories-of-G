@@ -1,6 +1,5 @@
-import { defineConfig } from 'astro/config'
+// @ts-check
+import { defineConfig } from 'astro/config';
 
-export default defineConfig({
-  site: 'https://1nky3.github.io',
-  base: '/Memories-of-G',
-});
+// https://astro.build/config
+export default defineConfig({});
