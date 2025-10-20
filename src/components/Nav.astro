@@ -1,0 +1,15 @@
+---
+export interface Props { activePath?: string }
+const { activePath = "/" } = Astro.props as Props;
+const links = [
+  { label: "Home", href: "/Memories-of-G/" },
+  { label: "About", href: "/Memories-of-G/aboutme" },
+  { label: "Portfolio", href: "/Memories-of-G/portfolio" },
+];
+---
+<div class="nav-logo">The Memories</div>
+<nav class="nav-links">
+  {links.map(l => (
+    <a href={l.href} class={`nav-link ${activePath === l.href ? 'active' : ''}`}>{l.label}</a>
+  ))}
+</nav>

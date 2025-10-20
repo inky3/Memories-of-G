@@ -1,0 +1,60 @@
+---
+import Layout from "../layouts/Layout.astro";
+import GradientPanel from "../components/GradientPanel.astro";
+---
+<Layout title="The Memories — About" activePath="/aboutme">
+  <section class="section">
+    <div class="container hero">
+      <div>
+        <h1 class="h1"><span>ABOUT</span> <span>ME</span></h1>
+      </div>
+      <div>
+        <img src="img/กก4.png" alt="Portrait" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <GradientPanel>
+        <h3 class="h3" style="margin:0 0 12px;">Contacts</h3>
+        <div style="display:grid; gap:10px; grid-template-columns: repeat(2, minmax(0,1fr));">
+          <div>
+            <div>Phone: 09X-XXX-XXXX</div>
+            <div>Email: name@example.com</div>
+            <div>Line: yourlineid</div>
+          </div>
+          <div>
+            <div>Address: Bangkok, TH</div>
+            <div>Website: yourdomain.com</div>
+          </div>
+        </div>
+
+        <div style="display:grid; gap:16px; grid-template-columns: repeat(2, minmax(0,1fr)); margin-top:24px;">
+          <div class="round" style="border:1px solid rgba(255,255,255,.5); padding:16px;">
+            <div class="h3" style="margin:0 0 6px;">Education</div>
+            <div>2022–2025 — GMD Graphic & Multimedia Design</div>
+            <div>2018–2021 — Science & Math Program</div>
+          </div>
+          <div class="round" style="border:1px solid rgba(255,255,255,.5); padding:16px;">
+            <div class="h3" style="margin:0 0 6px;">Skill</div>
+            <div>Prototyping, Wireframe, Branding, Layout</div>
+            <div>Mock-Up, Motion, UX Writing (Basics), Usability</div>
+          </div>
+        </div>
+
+        <div style="margin-top:24px;">
+          <div class="h3" style="margin:0 0 12px;">Software Skill</div>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <span class="badge">Ai</span>
+            <span class="badge">Ps</span>
+            <span class="badge">Xd</span>
+            <span class="badge">Pr</span>
+            <span class="badge">Figma</span>
+            <span class="badge">Capcut</span>
+          </div>
+        </div>
+      </GradientPanel>
+    </div>
+  </section>
+</Layout>

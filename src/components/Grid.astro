@@ -1,0 +1,9 @@
+---
+import Card from "./Card.astro";
+export interface Item { image:string; title:string; caption?:string; chip?:string; href?:string }
+export interface Props { items: Item[] }
+const { items } = Astro.props as Props;
+---
+<div class="work-grid">
+  {items.map(i => <Card {...i} />)}
+</div>

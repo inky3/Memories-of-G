@@ -1,0 +1,10 @@
+---
+export interface Props { title: string; subtitle?: string; align?: 'left'|'center' }
+const { title, subtitle, align='left' } = Astro.props as Props;
+---
+<section class={`section ${align === 'center' ? 'center' : ''}`}>
+  <div class="container">
+    <h2 class="h2">{title}</h2>
+    {subtitle && <p class="p-lead">{subtitle}</p>}
+  </div>
+</section>
