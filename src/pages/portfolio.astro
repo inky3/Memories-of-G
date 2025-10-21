@@ -121,34 +121,34 @@ const graphic = [
   </section>
 
   <style>
-    /* === HERO SECTION === */
-    .hero-section {
-      position: relative;
-      background: url('../img/กก3.png') no-repeat center top;
-      background-size: contain;       /* instead of cover → shows full film strip */
-      background-attachment: scroll;  /* prevents weird zoom on scroll */
-      background-position: center 40%; /* adjust this % to move image up/down */
-      padding: 100px 0 100px;
-      text-align: center;
-    }
+  /* === HERO SECTION === */
+  .hero-section {
+    position: relative;
+    background: url('/img/กก3.png') no-repeat center top;
+    background-size: 120%;           /* slight zoom-in (was contain) */
+    background-attachment: scroll;
+    background-position: center 45%; /* adjust 45–55% for framing */
+    padding: 100px 0 100px;
+    text-align: center;
+  }
 
+  .hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #d1d1d1;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 992px) {
     .hero-title {
-      font-size: 4rem;
-      font-weight: 800;
-      letter-spacing: 2px;
-      color: #d1d1d1;
-      margin: 0;
-      text-transform: uppercase;
+      font-size: 2.5rem;
     }
-
-    @media (max-width: 992px) {
-      .hero-title {
-        font-size: 2.5rem;
-      }
-      .hero-section {
-        background-size: contain;
-        padding: 80px 0;
-      }
+    .hero-section {
+      background-size: 130%;         /* a bit tighter on mobile */
+      padding: 80px 0;
     }
+  }
   </style>
 </Layout>
