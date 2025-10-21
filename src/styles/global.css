@@ -22,7 +22,6 @@ body{
 }
 
 .container{max-width:var(--max); margin:0 auto; padding:0 var(--space-4);}
-.header-spacer{height:72px;} /* to offset sticky nav */
 
 .navbar{
   position:sticky; top:0; z-index:50; background:#fff; border-bottom:1px solid #e5e7eb;
